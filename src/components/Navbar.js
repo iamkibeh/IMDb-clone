@@ -1,6 +1,8 @@
 import MenuItem from './MenuItem'
 import { AiOutlineHome } from 'react-icons/ai'
 import { BsInfoCircleFill } from 'react-icons/bs'
+import Link from 'next/link'
+import DarkModeSwitch from './DarkModeSwitch'
 
 const Navbar = () => {
   return (
@@ -14,11 +16,16 @@ const Navbar = () => {
             address='/about'
           />
         </div>
-        <div className=''>
-          <h2 className='text-2xl'>
-            <span className='bg-amber-400 py-1 px-2 mr-1 rounded-lg'>IMDb</span>
-            <span className='hidden sm:inline'>clone</span>
-          </h2>
+        <div className='flex items-center  space-x-4'>
+          <DarkModeSwitch />
+          <Link href='/'>
+            <h2 className='text-2xl'>
+              <span className='bg-amber-400 py-1 px-2 mr-1 rounded-lg'>
+                IMDb
+              </span>
+              <span className='hidden sm:inline'>clone</span>
+            </h2>
+          </Link>
         </div>
       </div>
     </>

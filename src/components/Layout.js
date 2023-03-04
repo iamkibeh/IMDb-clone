@@ -1,10 +1,13 @@
 import Navbar from './Navbar'
+import Providers from './Providers'
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
-      {children}
+      <Providers>
+        <Navbar />
+        {children}
+      </Providers>
     </>
   )
 }
