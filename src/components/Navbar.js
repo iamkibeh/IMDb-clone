@@ -1,3 +1,4 @@
+'use client'
 import MenuItem from './MenuItem'
 import { AiOutlineHome } from 'react-icons/ai'
 import { BsInfoCircleFill } from 'react-icons/bs'
@@ -9,12 +10,8 @@ const Navbar = () => {
     <>
       <div className='py-3 flex justify-between items-center mx-2 max-w-6xl sm:mx-auto'>
         <div className='flex gap-4 flex-grow'>
-          <MenuItem title={'Home'} icon={<AiOutlineHome />} address='/' />
-          <MenuItem
-            title={'About'}
-            icon={<BsInfoCircleFill />}
-            address='/about'
-          />
+          <MenuItem title={'Home'} Icon={AiOutlineHome} address='/' />
+          <MenuItem title={'About'} Icon={BsInfoCircleFill} address='/about' />
         </div>
         <div className='flex items-center  space-x-4'>
           <DarkModeSwitch />
