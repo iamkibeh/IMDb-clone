@@ -2,6 +2,7 @@ import AppBar from '@/components/AppBar'
 import Navbar from '@/components/Navbar'
 import Providers from '@/app/Providers'
 import '@/styles/globals.css'
+import SearchField from '@/components/SearchField'
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -14,6 +15,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           <AppBar />
+          <SearchField />
           {children}
         </Providers>
       </body>
